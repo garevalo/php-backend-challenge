@@ -54,6 +54,16 @@ Para dejarlo claro, un producto nunca puede incrementar su Quality mayor a 50, s
 # Preguntas de conocimiento en Laravel
 
 1. Qué paquete o estrategia utilizarías para levantar un sistema de administración rápidamente? (Autenticación y CRUDs)
+
+Usaria el paquete de breeze por su simpleza, pero para un proyecto más grande seria conveniente laravel jetstream
+
 2. Una breve explicación de cómo laravel utiliza la injección de dependencias
+
+Laravel hace inyecciones de dependecias a traves de la implementacion de service container, que mediante su metodo bind crea los accesos al servicio.
+
 3. En qué casos utilizarías un Query Scope?
+
+Cuando las consuntas sean repetivas. Ejemplo: Obtener los roles de un usuario.
+
 4. Qué convenciones utilizas en la creación e implementación de migraciones?
+ He usado la convencion que recomienda laravel, el formato snake_case 
